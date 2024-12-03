@@ -38,4 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 web: 1:07:00
 
-myPhone: 21:09
+myPhone: 30:35s - 50:11-
+
+还剩10min;

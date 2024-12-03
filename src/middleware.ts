@@ -1,11 +1,10 @@
-
 // 用于身份认证以及路由校验
 // 来源地址：https://dashboard.clerk.com/apps/app_2pYskZXxBueEjmVZ8a6cjcOR6wd/instances/ins_2pYskajXg0cQZ3TuMB6mb9qXiO1
 // authMiddleware不知道从哪来的
 import { authMiddleware } from "@clerk/nextjs/server";
 
 export default authMiddleware({
-    publicRoutes: ['/','/auth(.*)','/portal(.*)'],
+    publicRoutes: ['/','/auth(.*)','/portal(.*)','/images(.*)'],
     ignoredRoutes: ['/chatbot'],
 });
 

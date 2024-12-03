@@ -12,4 +12,22 @@ npx prisma db push
 运行查看
 
 <!-- 登录/注册页面逻辑 -->
+.xxx 是className
 
+ npx shadcn@latest init
+ 安装ui组件库
+
+form-provider 引入
+npx shadcn@latest add --al
+
+??
+1. children 的提示没得；
+2. tailwind 写页面咋写？？（花1h速成一下）
+3. 为什么在下面导入 Image 没有提示？？？
+
+
+
+
+
+tailwind
+1. 设置元素在大屏幕（large devices）上的宽度为 100%
