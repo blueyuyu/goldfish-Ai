@@ -1,3 +1,43 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    // 自定义规则
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "import/prefer-default-export": "off",
+    "max-len": ["warn", { "code": 100 }],
+    "react/jsx-max-props-per-line": ["error", { "maximum": 1 }],
+    // 设置为 "error" 并指定 maximum: 1，确保每个属性独占一行。
+    "react/jsx-indent-props": ["error", 2],
+    // 规则确保属性缩进为两个空格。
+    "react/jsx-curly-newline": ["error", { "ObjectExpression": "always" }]
+    // 设置为 "error" 并指定 { "ObjectExpression": "always" }，确保对象表达式总是换行。
+  }
 }
