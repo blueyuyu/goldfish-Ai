@@ -38,6 +38,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 web: 1:07:00
 
-myPhone: 30:35s - 50:11-
+myPhone: 30:35s - 50:11-1.07
 
-还剩10min;
+// next step 
+web: 1:07:00-3：21：23   登录注册完成，首页与选项与图片展示完成，后面的layout页面完成
+
+myPhone: 50:11-

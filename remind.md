@@ -20,6 +20,13 @@ npx prisma db push
 form-provider 引入
 npx shadcn@latest add --al
 
+
+引入cloadways 作为云服务托管平台
+
+2:51:00 又引入了一个其他的库，引入了一个库，来做上传文件的功能。
+
+
+
 ??
 1. children 的提示没得；
 2. tailwind 写页面咋写？？（花1h速成一下）
@@ -27,7 +34,11 @@ npx shadcn@latest add --al
 
 
 
-
-
 tailwind
-1. 设置元素在大屏幕（large devices）上的宽度为 100%
+1. 设置元素在大屏幕（large devices）上的宽度为 100%;
+
+
+seo优化
+1. 技术文章可以提高SEO权重，点击越多，SEO权重越大；
+2. 使用vue/ react 构建的项目是没办法被SEO检测的；
+3. 使用云服务代理，把你的网站托管到其他平台，这样你就可以借用其他人的权重，以提高自己的排名；
