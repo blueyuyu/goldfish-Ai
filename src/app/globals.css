@@ -112,14 +112,11 @@ body {
 .chat-bubble {
   background-color: #f1f1f1;
   padding: 16px 28px;
-  -webkit-border-t-radius: 10px;
-  -webkit-border-bottom-left-radius: 2px;
-  -moz-border-t-radius: 10px;
-  -moz-border-radius-bottomleft: 2px;
   border-radius: 10px;
   border-bottom-left-radius: 2px;
   display: inline-block;
 }
+
 .typing {
   align-items: center;
   display: flex;
