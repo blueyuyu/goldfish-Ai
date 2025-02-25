@@ -14,6 +14,7 @@ import { onCompleteUserRegistration } from "@/actions/auth"
 export const useSignUpForm = () => {
   const { toast } = useToast()
   const [loading, setLoading] = useState<boolean>(false)
+  // useSignUp 是 clerk 提供的 hook，用来处理注册逻辑
   const { signUp, isLoaded, setActive } = useSignUp()
   const router = useRouter()
   const methods = useForm<UserRegistrationProps>({
@@ -24,7 +25,7 @@ export const useSignUpForm = () => {
     mode: "onChange",
   })
 
-  //
+  // 注册步骤 1 -> 2 -> 3
   const onGenerateOTP = async (
     email: string,
     password: string,
