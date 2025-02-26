@@ -23,7 +23,7 @@
         }
 
         .box {
-            width: 700px;
+            width: 500px;
             height: 60px;
             background-image: linear-gradient(to right, #016773, #005467, #00425a, #033149, #082038);
             animation: rotate 5s linear infinite;
@@ -41,28 +41,38 @@
             justify-content: center;
             background-color: #092840;
             border-radius: 50%;
+            /* box-shadow: 0 0 5px 2px #0e7c83,
+                0 0 5px 2px #0e7c83 inset; */
         }
 
         .circle-inner {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100px;
-            height: 100px;
+            width: 105px;
+            height: 105px;
             border-radius: 50%;
-            border: #0e7c83 solid 3px;
-            box-shadow: #0e7c83 0px 4px 12px;
+            border: #0e7c83 solid 1px;
+            /* box-shadow: #0e7c83 0px 4px 12px; */
+            box-shadow: 0 0 2px 1px #0e7c83,
+                /* 柔和的外边缘颜色 */
+                0 0 2px 1px #0e7c83 inset;
+            /* 内部更深的阴影增加立体感（可选） */
         }
 
         .circle-inner-inner {
-            width: 80px;
-            height: 80px;
+            width: 85px;
+            height: 85px;
             background-image: linear-gradient(to right, #00818b, #006c7c, #00586b, #024559, #063346);
             border-radius: 50%;
             box-shadow: rgba(1, 133, 138, 0.25) 0px 6px 10px -2px, rgba(1, 133, 138, 0.08) 6px 6px 6px 1px;
             border: #058f91 solid 2px;
-            backdrop-filter: blur(10px);
-            /* box-shadow: rgba(1, 133, 138, 0.25) 0px 30px 60px -12px inset, rgba(1, 133, 138, 0.3) 0px 18px 36px -18px inset; */
+            /* backdrop-filter: blur(10px); */
+            box-shadow: 0 0 2px 1px #0e7c83,
+                /* 柔和的外边缘颜色 */
+                0 0 2px 1px #0e7c83 inset;
+            /* 内部更深的阴影增加立体感（可选） */
+
         }
     </style>
 </head>
