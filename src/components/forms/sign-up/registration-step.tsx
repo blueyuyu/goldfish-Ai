@@ -4,6 +4,13 @@ import React, { useState } from "react"
 import { useFormContext } from "react-hook-form"
 import TypeSelectionForm from "./type-selection-form"
 import { loadGetInitialProps } from "next/dist/shared/lib/utils"
+import dynamic from "next/dynamic"
+import { Spinner } from "@/components/spinner"
+
+const DetailForm = dynamic(() => import("./account-detail-form"), {
+  ssr: false,
+  loading: Spinner,
+})
 
 type Props = {}
 
@@ -25,7 +32,6 @@ const RegistrationFormStep = (props: Props) => {
 
   switch (currentStep) {
     case 1:
-      console.log("进入第一步", true)
       return (
         <TypeSelectionForm
           register={register}
@@ -33,10 +39,8 @@ const RegistrationFormStep = (props: Props) => {
           setUserType={setOnUserType}
         ></TypeSelectionForm>
       )
-      break
     case 2:
-      return <div>RegistrationFormStep</div>
-      break
+      return <DetailForm register={register} errors={errors}></DetailForm>
 
     case 3:
       return <div>RegistrationFormStep</div>
