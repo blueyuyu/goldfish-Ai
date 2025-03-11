@@ -12,6 +12,11 @@ const DetailForm = dynamic(() => import("./account-detail-form"), {
   loading: Spinner,
 })
 
+const OtpForm = dynamic(() => import("./otp-form"), {
+  ssr: false,
+  loading: Spinner,
+})
+
 type Props = {}
 
 // 这一块是注册的步骤条，获取到当前步骤，根据步骤显示不同的表单
@@ -43,7 +48,7 @@ const RegistrationFormStep = (props: Props) => {
       return <DetailForm register={register} errors={errors}></DetailForm>
 
     case 3:
-      return <div>RegistrationFormStep</div>
+      return <OtpForm setOTP={setOnOtp} onOTP={onOtp}></OtpForm>
       break
 
     default:

@@ -96,6 +96,8 @@ export const useSignUpForm = () => {
     }
   })
 
+  
+
   return {
     methods,
     onHandleSubmit,
