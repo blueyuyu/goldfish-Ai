@@ -9,7 +9,6 @@ type UserRegistrationProps = {
   label?: string
 }
 
-// TODO YUYU1
 export const USER_REGISTRATION_FORM: UserRegistrationProps[] = [
   {
     id: "1",
