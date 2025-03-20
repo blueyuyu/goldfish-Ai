@@ -36,3 +36,19 @@ export const UserRegistrationSchema: ZodType<UserRegistrationProps> = z
     message: "Your emails not match",
     path: ["confirmEmail"],
   })
+
+// 登录功能
+export type UserLoginProps = {
+  email: string
+  password: string
+}
+
+export const UserLoginSchema: ZodType<UserLoginProps> = z.object({
+  email: z.string().email({ message: "Incorrect email format" }),
+  password: z
+    .string()
+    .min(8, { message: "Your password must be at least 8 characters long" })
+    .max(12, {
+      message: "Your password can not be longer then 12 characters long",
+    }),
+})

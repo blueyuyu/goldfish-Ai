@@ -10,7 +10,6 @@ import { onCompleteUserRegistration } from "@/actions/auth"
 
 // zodResolver 是手动输入的！
 
-// TODO 这一段又是用来干嘛的？？？
 export const useSignUpForm = () => {
   const { toast } = useToast()
   const [loading, setLoading] = useState<boolean>(false)
